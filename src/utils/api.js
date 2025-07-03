@@ -1,6 +1,6 @@
 // src/utils/api.js
 
-const BASE_URL = "http://localhost:4000/api";
+const BASE_URL = "https://proyecto10-bk.onrender.com/api";
 
 export async function apiFetch(endpoint, method = "GET", body = null, token = null) {
   const headers = {};
