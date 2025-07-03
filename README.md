@@ -1,13 +1,13 @@
 # 🗓️ Proyecto 10 - Gestión de Eventos
 
-Aplicación full-stack para gestionar eventos, permitir registros, confirmación de asistencia, y subida de carteles con imágenes.
+Aplicación full-stack para gestionar eventos: permite a los usuarios registrarse, iniciar sesión, crear eventos, subir carteles con imágenes, buscar eventos y confirmar asistencia.
+
+---
 
 ## 🔗 Demo online
 
-- Frontend: [https://proyecto10-frontend.vercel.app](https://proyecto10-frontend.vercel.app)
-- Backend: [https://proyecto10-api.onrender.com](https://proyecto10-api.onrender.com)
-
-> 🌐 Sustituí las URLs por las reales cuando estén desplegadas.
+- **Frontend (Vercel)**: [https://proyecto10-frt.vercel.app](https://proyecto10-frt.vercel.app)
+- **Backend (Render)**: [https://proyecto10-bk.onrender.com](https://proyecto10-bk.onrender.com)
 
 ---
 
@@ -31,22 +31,27 @@ Aplicación full-stack para gestionar eventos, permitir registros, confirmación
 
 ## 📁 Estructura del proyecto
 
+> Ambos proyectos están separados en sus respectivos repositorios:
+
+- **Frontend** → carpeta: `frontend/`
+- **Backend** → carpeta: `backend/`
+
+Cada uno cuenta con su propia arquitectura limpia, modular y profesional.
 
 ---
 
 ## 🔐 Autenticación
 
-- Registro (`/auth/register`)
-- Login (`/auth/login`)
+- Registro (`POST /auth/register`)
+- Login (`POST /auth/login`)
 - Middleware `auth` para proteger rutas privadas
-- Token guardado en `localStorage`
+- Token JWT guardado en `localStorage`
 
 ---
 
 ## 🛠️ Funcionalidades principales
 
 ### 👤 Usuario
-
 - Registro e inicio de sesión
 - Crear eventos con título, descripción, fecha, ubicación y cartel
 - Buscar eventos
@@ -56,7 +61,7 @@ Aplicación full-stack para gestionar eventos, permitir registros, confirmación
 
 ---
 
-## 🧪 Endpoints principales (backend)
+## 🧪 Endpoints principales (Backend)
 
 ```http
 POST   /auth/register       # Crear cuenta
