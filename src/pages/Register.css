@@ -1,0 +1,21 @@
+.register-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: var(--transition);
+}
+
+.register-container h2 {
+  margin-bottom: 1rem;
+}
+
+.register-container input {
+  margin-bottom: 1rem;
+}
+
+.register-container button {
+  width: 100%;
+}

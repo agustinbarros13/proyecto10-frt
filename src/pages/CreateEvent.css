@@ -1,0 +1,25 @@
+.create-event-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: var(--transition);
+}
+
+.create-event-container h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.create-event-container input[type="text"],
+.create-event-container input[type="datetime-local"],
+.create-event-container input[type="file"] {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.create-event-container button {
+  width: 100%;
+}

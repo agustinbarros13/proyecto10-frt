@@ -1,0 +1,12 @@
+.loading-message {
+  font-style: italic;
+  color: #aaa;
+  text-align: center;
+  margin-top: 1rem;
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

@@ -1,0 +1,109 @@
+.event-detail-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: var(--text-color);
+  font-family: var(--font-main);
+}
+
+.event-title {
+  color: var(--accent-color);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.event-main {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.event-poster {
+  width: 200px;
+  height: auto;
+  border-radius: var(--border-radius);
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.event-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.event-info p {
+  margin: 0;
+}
+
+.event-info button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+.event-info button:hover {
+  background-color: var(--accent-hover);
+}
+
+.event-message {
+  margin-top: 1rem;
+  color: var(--accent-color);
+  font-style: italic;
+}
+
+.event-attendees {
+  margin-top: 2rem;
+}
+
+.event-attendees h3 {
+  color: var(--accent-color);
+  margin-bottom: 0.8rem;
+}
+
+.event-attendees ul {
+  list-style: none;
+  padding: 0;
+}
+
+.event-attendees li {
+  margin-bottom: 0.3rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.back-link:hover {
+  color: var(--accent-hover);
+}
+
+@media (max-width: 700px) {
+  .event-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .event-poster {
+    width: 100%;
+  }
+
+  .event-info {
+    width: 100%;
+  }
+}
